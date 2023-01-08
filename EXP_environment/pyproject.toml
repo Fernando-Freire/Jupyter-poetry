@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "jupyter-poetry"
+version = "0.1.0"
+description = ""
+authors = ["Fernando Freire Scattone <fernando.scattone@alumni.usp.br>"]
+license = "MIT Licence"
+readme = "README.md"
+packages = [{include = "jupyter_poetry"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+jupyter = "^1.0.0"
+pandas = "^1.5.2"
+dask = {extras = ["complete"], version = "^2022.12.1"}
+polars = "^0.15.14"
+vaex = "^4.16.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

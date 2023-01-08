@@ -1,0 +1,12 @@
+version: '3.9'
+
+services:
+
+    jupyter:
+        image: jupyter
+        container_name: jupyter
+        build: .
+        ports:
+        - "8888:8888"
+        volumes:
+        - ".:/usr/src/notebooks"
